@@ -15,7 +15,7 @@
     Книга - Грокаем Алгоритмы А. Бхаргава.
 
 ВРЕМЕННАЯ СЛОЖНОСТЬ
-    Бинарный поиск и поиск опорной точки имеют временную сложность O(log n).
+    Бинарный поиск и поиск опорной точки в массиве, содержащий n элементов, имеют временную сложность O(log n).
 
 ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ
     Бинарный поиск и поиск опорной точки имеют пространственную сложность O(1).
@@ -23,9 +23,9 @@
 """
 
 
-def binary_search(arr, target, *, low=None, high=None):
-    low = low if low else 0
-    high = high if high else len(arr) - 1
+def binary_search(arr, target, low=None, high=None):
+    low = 0 if low is None else low
+    high = len(arr) - 1 if high is None else high
 
     while low <= high:
         mid = (low + high) // 2
@@ -39,9 +39,9 @@ def binary_search(arr, target, *, low=None, high=None):
     return -1
 
 
-def find_pivot(arr, *, low=None, high=None):
-    low = low if low else 0
-    high = high if high else len(arr) - 1
+def find_pivot(arr):
+    low = 0
+    high = len(arr) - 1
 
     while low <= high:
         mid = (low + high) // 2
@@ -59,8 +59,3 @@ def broken_search(nums, target):
         return pivot
 
     return binary_search(nums, target, high=pivot-1) if nums[0] <= target else binary_search(nums, target, low=pivot+1)
-
-
-def test():
-    arr = [12, 41, 122, 411, 412, 1222, 3000, 12222, 122222]
-    assert broken_search(arr, 3000) == 6
