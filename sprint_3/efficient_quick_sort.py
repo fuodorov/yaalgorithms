@@ -62,6 +62,15 @@ class User:
     solved: int
     errors: int
 
+#   Такой компаратор лучше сделать на основе сравнения ключа
+#   В качестве ключа может использоваться кортеж
+# 
+#   def key(self):
+#       return (-self.solved, self.errors, self.username)
+#     
+#   def __gt__(self, other):
+#       return self.key() > other.key()
+
     def __gt__(self, other):
         if self.solved == other.solved:
             return self.username > other.username if self.errors == other.errors else self.errors > other.errors
