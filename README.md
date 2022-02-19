@@ -1217,7 +1217,7 @@ rita<br>
 
 ---
 
-## Рекурсия и сортировки 
+## Хеш-функции
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/23991/problems/)
 
