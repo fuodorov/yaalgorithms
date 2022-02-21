@@ -1357,6 +1357,45 @@ a<br>
 
 <details>
 <summary>
+<b>Подстроки (<a href="sprint_4/substrings.py">substrings.py</a></b>)
+</summary>
+
+#### Условие
+На вход подается строка. 
+Нужно определить длину наибольшей подстроки, которая не содержит повторяющиеся символы.
+
+#### Формат ввода
+Одна строка, состоящая из строчных латинских букв. Длина строки не превосходит 10 000.
+
+#### Формат вывода
+Выведите натуральное число —– ответ на задачу.
+
+
+#### Пример
+<table><tbody>
+  <tr>
+    <td><b>Ввод</b></td>
+    <td><b>Вывод</b></td>
+  </tr>
+  <tr>
+    <td valign="top">
+abcabcbb<br>
+
+</td>
+    <td valign="top">
+3<br>
+
+
+</td>
+  </tr>
+</tbody></table>
+
+</details>
+
+---
+
+<details>
+<summary>
 <b>Поисковая система (<a href="sprint_4/search_system.py">search_system.py</a></b>)
 </summary>
 
