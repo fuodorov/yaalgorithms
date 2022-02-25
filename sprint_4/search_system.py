@@ -1,6 +1,8 @@
 """
 ПРИНЦИП РАБОТЫ
 
+    Серия статей на хабре - https://habr.com/ru/post/263823/, https://habr.com/ru/post/263913/
+
 ДОКАЗАТЕЛЬСТВО КОРРЕКТНОСТИ
 
 ВРЕМЕННАЯ СЛОЖНОСТЬ
@@ -12,6 +14,8 @@ from collections import Counter
 from itertools import chain
 
 
+# input = [word1, word2, ...]
+# output = {word1: [pos1, pos2], word2: [pos2, pos3], ...}
 def index_one_file(term_list):
     file_index = {}
     for index, word in enumerate(term_list):
@@ -22,6 +26,8 @@ def index_one_file(term_list):
     return file_index
 
 
+# input = {filename: [word1, word2, ...], ...}
+# output = {filename: {word: [pos1, pos2, ...]}, ...}
 def make_indices(term_lists):
     total = {}
     for filename in term_lists.keys():
@@ -29,6 +35,8 @@ def make_indices(term_lists):
     return total
 
 
+# input = {filename: {word: [pos1, pos2, ...], ... }}
+# output = {word: {filename: [pos1, pos2]}, ...}, ...}
 def full_index(regdex):
     total_index = {}
     for filename in regdex.keys():
@@ -45,7 +53,7 @@ def full_index(regdex):
 
 def one_word_query(index, word):
     if word in index.keys():
-        return chain(*[[filename]*len(index[word][filename]) for filename in index[word].keys()])
+        return chain(*[[filename] * len(index[word][filename]) for filename in index[word].keys()])
     else:
         return []
 
@@ -62,11 +70,9 @@ n = int(input())
 documents = {}
 
 for document in range(n):
-    documents[document+1] = input().split()
+    documents[document + 1] = input().split()
 
 m = int(input())
 
 for request in range(m):
     print(*free_text_query(full_index(make_indices(documents)), input())[:5])
-
-
