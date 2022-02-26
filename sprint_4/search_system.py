@@ -10,69 +10,59 @@
 ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ
 
 """
-from collections import Counter
-from itertools import chain
 
 
 # input = [word1, word2, ...]
-# output = {word1: [pos1, pos2], word2: [pos2, pos3], ...}
+# output = {word1: len1, word2: len2, ...}
 def index_one_file(term_list):
     file_index = {}
-    for index, word in enumerate(term_list):
+    for word in term_list:
         if word in file_index.keys():
-            file_index[word].append(index)
+            file_index[word] += 1
         else:
-            file_index[word] = [index]
+            file_index[word] = 1
     return file_index
 
 
-# input = {filename: [word1, word2, ...], ...}
-# output = {filename: {word: [pos1, pos2, ...]}, ...}
-def make_indices(term_lists):
-    total = {}
-    for filename in term_lists.keys():
-        total[filename] = index_one_file(term_lists[filename])
-    return total
-
-
-# input = {filename: {word: [pos1, pos2, ...], ... }}
-# output = {word: {filename: [pos1, pos2]}, ...}, ...}
-def full_index(regdex):
-    total_index = {}
-    for filename in regdex.keys():
-        for word in regdex[filename].keys():
-            if word in total_index.keys():
-                if filename in total_index[word].keys():
-                    total_index[word][filename].extend(regdex[filename][word][:])
-                else:
-                    total_index[word][filename] = regdex[filename][word]
+# {filename: [word1, word2, ...], ...} =>
+# {filename: {word: len, ...}, ...} =>
+# {word: {filename: len}, ...}, ...}
+def full_index(files):
+    index, indices = {}, {}
+    for filename in files.keys():
+        indices[filename] = index_one_file(files[filename])
+        for word in indices[filename].keys():
+            if word in index.keys():
+                index[word][filename] = indices[filename][word]
             else:
-                total_index[word] = {filename: regdex[filename][word]}
-    return total_index
+                index[word] = {filename: indices[filename][word]}
+    return index
 
 
-def one_word_query(index, word):
-    if word in index.keys():
-        return chain(*[[filename] * len(index[word][filename]) for filename in index[word].keys()])
-    else:
-        return []
-
-
-def free_text_query(index, string):
+def get_max(arr, limit):
     result = []
-    for word in set(string.split()):
-        result += one_word_query(index, word)
-    return [item[0] for item in Counter(sorted(result)).most_common()]
+    for item in sorted(arr, reverse=True)[:limit]:
+        if item > 0:
+            index = arr.index(item)
+            result.append(index)
+            arr[index] = 0
+    return result
+
+
+def free_text_query(index, string, bd_size=10**5):
+    result = [0] * bd_size
+    for word in string.split() & index.keys():
+        for filename in index[word].keys():
+            result[filename] += index[word][filename]
+    return result
 
 
 n = int(input())
 
-documents = {}
-
-for document in range(n):
-    documents[document + 1] = input().split()
+documents = {document+1: input().split() for document in range(n)}
+search_index = full_index(documents)
 
 m = int(input())
 
 for request in range(m):
-    print(*free_text_query(full_index(make_indices(documents)), input())[:5])
+    print(*get_max(free_text_query(search_index, input(), bd_size=n+1), limit=5))
