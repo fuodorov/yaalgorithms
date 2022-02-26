@@ -49,11 +49,12 @@ def get_max(arr, limit):
     return result
 
 
-def free_text_query(index, string, bd_size=10**5):
+def free_text_query(index, string, bd_size=10**4):
     result = [0] * bd_size
-    for word in string.split() & index.keys():
-        for filename in index[word].keys():
-            result[filename] += index[word][filename]
+    for word in set(string.split()):
+        if word in index.keys():
+            for filename in index[word].keys():
+                result[filename] += index[word][filename]
     return result
 
 
