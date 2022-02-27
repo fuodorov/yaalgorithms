@@ -30,32 +30,18 @@
     Требуется О(n) памяти для построения поискового индекса.
 
 """
-
-
-# input = [word1, word2, ...]
-# output = {word1: len1, word2: len2, ...}
-def index_one_file(term_list):
-    file_index = {}
-    for word in term_list:
-        if word in file_index.keys():
-            file_index[word] += 1
-        else:
-            file_index[word] = 1
-    return file_index
+from collections import Counter, defaultdict
 
 
 # {filename: [word1, word2, ...], ...} =>
 # {filename: {word: len, ...}, ...} =>
 # {word: {filename: len}, ...}, ...}
 def full_index(files):
-    index, indices = {}, {}
-    for filename in files.keys():
-        indices[filename] = index_one_file(files[filename])
-        for word in indices[filename].keys():
-            if word in index.keys():
-                index[word][filename] = indices[filename][word]
-            else:
-                index[word] = {filename: indices[filename][word]}
+    index = defaultdict(dict)
+    for filename, words in enumerate(files):
+        files[filename] = dict(Counter(words))
+        for word, weight in files[filename].items():
+            index[word][filename] = weight
     return index
 
 
@@ -69,21 +55,21 @@ def get_max(arr, limit):
     return result
 
 
-def free_text_query(index, string, bd_size=10**4):
-    result = [0] * bd_size
+def free_text_query(index, string, n_docs=10**4):
+    result = [0] * n_docs
     for word in set(string.split()):
         if word in index.keys():
-            for filename in index[word].keys():
-                result[filename] += index[word][filename]
+            for filename, weight in index[word].items():
+                result[filename] += weight
     return result
 
 
 n = int(input())
 
-documents = {document+1: input().split() for document in range(n)}
+documents = [[]] + [input().split() for document in range(n)]
 search_index = full_index(documents)
 
 m = int(input())
 
 for request in range(m):
-    print(*get_max(free_text_query(search_index, input(), bd_size=n+1), limit=5))
+    print(*get_max(free_text_query(search_index, input(), n_docs=n+1), limit=5))
