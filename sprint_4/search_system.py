@@ -45,23 +45,13 @@ def full_index(files):
     return index
 
 
-def get_max(arr, limit):
-    result = []
-    for item in sorted(arr, reverse=True)[:limit]:
-        if item > 0:
-            index = arr.index(item)
-            result.append(index)
-            arr[index] = 0
-    return result
-
-
-def free_text_query(index, string, n_docs=10**4):
-    result = [0] * n_docs
+def free_text_query(index, string, limit=5, n_docs=10**4):
+    result = [[0, i] for i in range(n_docs)]
     for word in set(string.split()):
         if word in index.keys():
             for filename, weight in index[word].items():
-                result[filename] += weight
-    return result
+                result[filename][0] -= weight
+    return [index for weight, index in sorted(result)[:limit] if weight < 0]
 
 
 n = int(input())
@@ -72,4 +62,4 @@ search_index = full_index(documents)
 m = int(input())
 
 for request in range(m):
-    print(*get_max(free_text_query(search_index, input(), n_docs=n+1), limit=5))
+    print(*free_text_query(search_index, input(), limit=5, n_docs=n+1))
