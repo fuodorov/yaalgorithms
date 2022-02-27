@@ -39,8 +39,7 @@ from collections import Counter, defaultdict
 def full_index(files):
     index = defaultdict(dict)
     for filename, words in enumerate(files):
-        files[filename] = dict(Counter(words))
-        for word, weight in files[filename].items():
+        for word, weight in Counter(words).items():
             index[word][filename] = weight
     return index
 
@@ -51,7 +50,7 @@ def free_text_query(index, string, limit=5, n_docs=10**4):
         if word in index.keys():
             for filename, weight in index[word].items():
                 result[filename][0] -= weight
-    return [index for weight, index in sorted(result)[:limit] if weight < 0]
+    return [index for weight, index in sorted([(weight, index) for weight, index in result if weight < 0])[:limit]]
 
 
 n = int(input())
