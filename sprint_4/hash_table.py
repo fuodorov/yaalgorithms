@@ -40,6 +40,13 @@
     Эта операция поиска имеет O(1), поскольку на вычисление хэш-значения требуется константное время,
     как и на переход по найденному индексу.
     Если всё находится там, где ему положено, то мы получаем алгоритм поиска за константное время.
+    ...Но если она слишком плохая, это O(n):
+    Когда HashTable ищет значение, он сначала использует значение и длину Hashtable для выполнения операции по модулю,
+    полученное число непосредственно используется как индекс массива записей в хеш-таблице.
+    Поэтому она может быть непосредственно расположена в указанной позиции без поиска, конечно,
+    здесь есть проблема, каждая запись на самом деле представляет собой связанный список.
+    Если запись имеет много значений, она все равно должна проходить по одному,
+    поэтому можно сказать, что временная сложность Hashtable предпочтительно составляет O(1), но худшее - O(n).
 
 ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ
     Map, максимальный размер которого определяется заданным числом k, занимает O(k) памяти.
@@ -62,9 +69,7 @@ class HashTable:
         elif self._slots[slot] == key:
             self._data[slot] = data
         else:
-            next_slot = self.rehash(slot)
-            while self._slots[next_slot] is not None and self._slots[next_slot] != key:
-                next_slot = self.rehash(next_slot)
+            next_slot = self.find_position(self.rehash(slot), key)
 
             if self._slots[next_slot] is None:
                 self._slots[next_slot] = key
@@ -73,24 +78,19 @@ class HashTable:
                 self._data[next_slot] = data
 
     def hash(self, key):
-        return key % self._size
+        return hash(key) % self._size
 
     def rehash(self, old_hash):
-        return (old_hash + 1) % self._size
+        return hash(old_hash + 1) % self._size
+
+    def find_position(self, position, key):
+        while self._slots[position] is not None and self._slots[position] != key:
+            position = self.rehash(position)
+        return position
 
     def get(self, key):
-        data = None
-        stop, found = False, False
-        position = slot = self.hash(key)
-        while self._slots[position] is not None and not found and not stop:
-            if self._slots[position] == key:
-                found = True
-                data = self._data[position]
-            else:
-                position = self.rehash(position)
-                if position == slot:
-                    stop = True
-        return data
+        position = self.find_position(self.hash(key), key)
+        return self._data[position] if self._slots[position] == key else None
 
     def delete(self, key):
         data = self.get(key)
@@ -118,4 +118,4 @@ for _ in range(n):
     if len(cmd) == 2:
         print(getattr(hashtable, cmd[0])(int(cmd[1])))
     else:
-        getattr(hashtable, cmd[0])(int(cmd[1]), int(cmd[2]))
+        getattr(hashtable, cmd[0])(*map(int, cmd[1:]))
