@@ -35,10 +35,10 @@ class User:
 
 
 def heapsort(data):
-    for start in range((len(data) - 2) // 2, -1, -1):
+    for start in range((len(data)-2)//2, -1, -1):
         heapsift(data, start, len(data) - 1)
 
-    for end in range(len(data) - 1, 0, -1):
+    for end in range(len(data)-1, 0, -1):
         data[end], data[0] = data[0], data[end]
         heapsift(data, 0, end - 1)
 
@@ -52,12 +52,11 @@ def heapsift(data, start, end):
         if child > end:
             break
 
-        if child + 1 <= end and data[child] < data[child + 1]:
+        if child + 1 <= end and data[child] < data[child+1]:
             child += 1
 
         if data[root] < data[child]:
-            data[root], data[child] = data[child], data[root]
-            root = child
+            data[root], data[child], root = data[child], data[root], child
         else:
             break
 
