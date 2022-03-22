@@ -1,13 +1,24 @@
 """
 ПРИНЦИП РАБОТЫ
+    Идея удаления элемента делится на несколько случаев:
+        1) у узла нет дочерних узлов;
+        2) у узла есть левый дочерних узлов;
+        3) у узла есть правый дочерних узлов;
+        4) у узла есть оба ребёнка.
 
-ДОКАЗАТЕЛЬСТВО КОРРЕКТНОСТИ
-    Статья - https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/.
+    В случае 1 просто удаляем узел, дополнительная работа не требуется.
+    В случае 2 и 3 заменяем удаляемый узел на его потомка, на этом удаление заканчивается.
+    В случае 4 находим в правом поддереве минимальный элемент и перемещаем его на место удаляемого узла.
+
+    Статья - https://tproger.ru/articles/dvoichnoe-binarnoe-derevo-udalenie-jelementa-i-skorost-raboty/.
 
 ВРЕМЕННАЯ СЛОЖНОСТЬ
+    Наихудшая временная сложность операции удаления - O(h), где h - высота дерева.
+    В худшем случае нам, возможно, придется путешествовать от корня к самому глубокому узлу.
+    Высота перекошенного дерева может стать n, а временная сложность операции удаления - O(n).
 
 ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ
-
+    O(1)
 """
 
 
@@ -39,11 +50,10 @@ def remove(root, key):
             else:
                 return root.right
     else:
-        if root.value > key:  # key should be in the left subtree
+        if root.value > key:
             if root.left:
                 root.left = remove(root.left, key)
-            # else the key is not in the tree
-        else:  # key should be in the right subtree
+        else:
             if root.right:
                 root.right = remove(root.right, key)
     return root
