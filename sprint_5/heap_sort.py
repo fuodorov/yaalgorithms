@@ -10,7 +10,6 @@
 ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ
 
 """
-import random
 from dataclasses import dataclass
 
 
