@@ -1872,7 +1872,7 @@ rita<br>
 
 <details>
 <summary>
-<b>Удали узел (<a href="sprint_5/remove_node.py">remove_node.p</a></b>)
+<b>Удали узел (<a href="sprint_5/remove_node.py">remove_node.py</a></b>)
 </summary>
 
 #### Условие
