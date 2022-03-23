@@ -1872,7 +1872,7 @@ rita<br>
 
 <details>
 <summary>
-<b>Максимальная глубина (<a href="sprint_5/max_depth.py">max_depth.py</a></b>)
+<b>Удали узел (<a href="sprint_5/remove_node.py">remove_node.p</a></b>)
 </summary>
 
 #### Условие
