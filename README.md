@@ -2251,7 +2251,7 @@ w — его вес ( 1 ≤ u, v ≤ n, 0 ≤ w ≤ 10000).
 
 <details>
 <summary>
-<b>Дорогая сеть (<a href="sprint_6/railroads.py">railroads.py</a></b>)
+<b>Железные дороги (<a href="sprint_6/railroads.py">railroads.py</a></b>)
 </summary>
 
 #### Условие
