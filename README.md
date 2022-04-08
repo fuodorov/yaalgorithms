@@ -2308,3 +2308,9 @@ NO<br>
 </details>
 
 ---
+
+## Жадные алгоритмы и динамическое программирование
+
+[contest.yandex.ru](https://contest.yandex.ru/contest/25596/problems/)
+
+---
