@@ -2315,6 +2315,10 @@ NO<br>
 
 ---
 
+## Алгоритмы на строках
+
+[contest.yandex.ru](https://contest.yandex.ru/contest/26131/problems/)
+
 ---
 
 ## Подготовка к собеседованиям
