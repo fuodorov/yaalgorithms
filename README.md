@@ -4,7 +4,7 @@
 
 ---
 
-## Введение в алгоритмы
+## 1. Введение в алгоритмы
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/22450/problems/)
 
@@ -112,7 +112,7 @@
 
 ---
 
-## Основные структуры 
+## 2. Основные структуры 
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/22779/problems/)
 
@@ -600,7 +600,7 @@ pop_back<br>
 
 ---
 
-## Рекурсия и сортировки 
+## 3. Рекурсия и сортировки 
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/23638/problems/)
 
@@ -1217,7 +1217,7 @@ rita<br>
 
 ---
 
-## Хеш-функции
+## 4. Хеш-функции
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/23991/problems/)
 
@@ -1616,7 +1616,7 @@ None<br>
 
 ---
 
-## Деревья
+## 5. Деревья
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/24809/problems/)
 
@@ -1893,7 +1893,7 @@ rita<br>
 
 ---
 
-## Графы
+## 6. Графы
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/25069/problems/)
 
@@ -2309,13 +2309,13 @@ NO<br>
 
 ---
 
-## Жадные алгоритмы и динамическое программирование
+## 7. Жадные алгоритмы и динамическое программирование
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/25596/problems/)
 
 ---
 
-## Алгоритмы на строках
+## 8. Алгоритмы на строках
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/26131/problems/)
 
