@@ -2315,3 +2315,10 @@ NO<br>
 
 ---
 
+---
+
+## Подготовка к собеседованиям
+
+[contest.yandex.ru](https://contest.yandex.ru/contest/34147/problems/)
+
+---
