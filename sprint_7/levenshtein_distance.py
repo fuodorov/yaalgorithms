@@ -22,7 +22,7 @@ def levenshtein_distance(first_str, second_str):
     if n > m:
         first_str, second_str, n, m = second_str, first_str, m, n
 
-    current = [i for i in range(n + 1)]
+    current = list(range(n + 1))
     for i in range(1, m + 1):
         previous, current = current, [i] + [0] * n
         for j in range(1, n + 1):
