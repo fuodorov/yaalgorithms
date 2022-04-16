@@ -2693,7 +2693,7 @@ True<br>
 
 <details>
 <summary>
-<b>Разворот строки (<a href="sprint_8/spread.go">spread.go</a></b>)
+<b>Разворот строки (<a href="sprint_8/reversal_string.go">reversal_string.go</a></b>)
 </summary>
 
 #### Условие
