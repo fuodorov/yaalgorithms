@@ -16,19 +16,20 @@
 """
 
 
-def is_same_amounts(n, points):
+def is_same_amounts(points):
     sum_points = sum(points)
     if sum_points % 2 != 0:
         return False
 
     half_sum = sum_points // 2
     dp = [True] + [False] * half_sum
-    for i in range(1, n + 1):
-        for j in range(half_sum, points[i - 1] - 1, -1):
-            dp[j] = dp[j - points[i - 1]] or dp[j]
+    for point in points:
+        for j in range(half_sum, point - 1, -1):
+            dp[j] = dp[j - point] or dp[j]
             if j == half_sum and dp[j]:
                 return True
     return dp[-1]
 
 
-print(is_same_amounts(int(input()), list(map(int, input().split()))))
+n = int(input())
+print(is_same_amounts(list(map(int, input().split()))))
