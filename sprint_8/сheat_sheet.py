@@ -1,47 +1,61 @@
+"""
+ПРИНЦИП РАБОТЫ
+    1.  Создадим префиксное дерево.
+        В терминальные узлы будем записывать дополнительную информацию - длину слова.
+    2.  Создадим массив с булевыми промежуточные значения - можно ли создать строку с данным индексом или же нет.
+        Для каждого индекса будем проходить по префиксному дереву.
+        Когда мы встречаем терминальный узел и при этом,
+        ответ положительный и для строки без текущего рассматриваемого слова,
+        тогда записываем в массив True.
+        В противном случае записывается False.
+
+ВРЕМЕННАЯ СЛОЖНОСТЬ
+    Построение префиксного дерева - O(L), где L — суммарная длина всех слов во множестве.
+    Прохождение по префиксному дереву - O(n^2), где n - количество символов в строке.
+
+ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ
+    Префиксное дерево - O(L), где L — суммарная длина всех слов во множестве.
+    Массив - O(n), где n - количество символов в строке.
+
+УСПЕШНАЯ ПОСЫЛКА
+    67517075
+"""
+
+
 class Node:
     def __init__(self, value, next=None):
         self.value = value
         self.next = {} if next is None else next
-        self.terminale = False
+        self.terminal = False
 
 
 def create_tree(words):
     root = Node('')
     for word in words:
         node = root
-        for index, symbol in enumerate(word):
-            new_node = Node(symbol)
-            node.next[symbol] = node.next.get(symbol, new_node)
+        for index, char in enumerate(word):
+            node.next[char] = node.next.get(char, Node(char))
             if index == len(word) - 1:
-                node.next[symbol].terminale = len(word)
-            node = node.next[symbol]
+                node.next[char].terminal = len(word)
+            node = node.next[char]
     return root
 
 
 def is_split_words(string, words):
     root = create_tree(words)
-    len_string = len(string)
-    dp = [False for _ in range(len_string + 1)]
-    dp[0] = True
+    dp = [True] + [False] * len(string)
     node = root
-    for i in range(len_string):
-        offset = 0
-        while i + offset < len_string + 1:
-            if node.terminale and dp[i + offset - node.terminale]:
-                dp[i + offset] = True
-            if (i + offset == len(string) or not node.next.get(string[i + offset], False)):
+    for i in range(len(string)):
+        for j in range(i, len(string) + 1):
+            if node.terminal and dp[j - node.terminal]:
+                dp[j] = True
+            if j == len(string) or not node.next.get(string[j], False):
                 node = root
                 break
-            node = node.next[string[i + offset]]
-            offset += 1
+            node = node.next[string[j]]
     return dp[-1]
 
 
-if __name__ == '__main__':
-    inp_string = input()
-    count_words = int(input())
-    inp_words = [input() for _ in range(count_words)]
-    if is_split_words(inp_string, inp_words):
-        print('YES')
-    else:
-        print('NO')
+string = input()
+words = [input() for _ in range(int(input()))]
+print('YES' if is_split_words(string, words) else 'NO')
