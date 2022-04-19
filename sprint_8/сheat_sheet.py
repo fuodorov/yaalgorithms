@@ -35,22 +35,23 @@ def create_tree(words):
         node = root
         for index, char in enumerate(word):
             node.next[char] = node.next.get(char, Node(char))
-            if index == len(word) - 1:
-                node.next[char].terminal = len(word)
             node = node.next[char]
+        node.terminal = len(word)
     return root
 
 
 def is_split_words(string, words):
     root = create_tree(words)
     dp = [True] + [False] * len(string)
-    node = root
     for i in range(len(string)):
+        node = root
         for j in range(i, len(string) + 1):
+            # ToDo: node.terminal соответствует глубине вершины.
+            #  Этим можно воспользоваться и часть запусков внутренних циклов пропустить
+            # - не совсем понимаю, что нужно здесь сделать
             if node.terminal and dp[j - node.terminal]:
                 dp[j] = True
             if j == len(string) or not node.next.get(string[j], False):
-                node = root
                 break
             node = node.next[string[j]]
     return dp[-1]
