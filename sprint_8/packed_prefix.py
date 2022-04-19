@@ -9,10 +9,10 @@
     O(n*m), где n - количество строк, m - длина самой большой строки.
 
 ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ
-    O(n*m), где n - количество строк, m - длина самой большой строки.
+    O(m), где m - длина самой большой строки.
 
 УСПЕШНАЯ ПОСЫЛКА
-    67490301
+    67533072
 """
 
 
@@ -40,18 +40,19 @@ def unpack(string):
     return ''.join(result)
 
 
-def max_prefix(strings):
-    if len(strings) == 0:
+def max_prefix():
+    n = int(input())
+
+    if n == 0:
         return ''
 
-    prefix = strings[0]
-    for string in strings[1:]:
-        while string.find(prefix) != 0:
+    prefix = unpack(input())
+    for _ in range(n-1):
+        string = unpack(input())
+        while string[:len(prefix)] != prefix and prefix:
             prefix = prefix[:-1]
 
     return prefix
 
 
-packed_strings = [input() for _ in range(int(input()))]
-unpacked_strings = [unpack(string) for string in packed_strings]
-print(max_prefix(unpacked_strings))
+print(max_prefix())
