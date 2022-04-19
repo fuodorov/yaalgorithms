@@ -18,7 +18,7 @@
     Массив - O(n), где n - количество символов в строке.
 
 УСПЕШНАЯ ПОСЫЛКА
-    67517075
+    67555610
 """
 
 
@@ -45,15 +45,13 @@ def is_split_words(string, words):
     dp = [True] + [False] * len(string)
     for i in range(len(string)):
         node = root
-        for j in range(i, len(string) + 1):
-            # ToDo: node.terminal соответствует глубине вершины.
-            #  Этим можно воспользоваться и часть запусков внутренних циклов пропустить
-            # - не совсем понимаю, что нужно здесь сделать
-            if node.terminal and dp[j - node.terminal]:
-                dp[j] = True
-            if j == len(string) or not node.next.get(string[j], False):
-                break
-            node = node.next[string[j]]
+        if dp[i]:
+            for j in range(i, len(string) + 1):
+                if node.terminal:
+                    dp[j] = True
+                if j == len(string) or not node.next.get(string[j], False):
+                    break
+                node = node.next[string[j]]
     return dp[-1]
 
 
