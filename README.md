@@ -12,7 +12,7 @@
 
 <details>
 <summary>
-<b>Ближайший ноль (<a href="sprint_1/nearest_zero.py">nearest_zero.py</a></b>)
+<b>Ближайший ноль (<a href="sprint_1/nearest_zero.py">nearest_zero.py</a>)</b>
 </summary>
 
 #### Условие
@@ -64,7 +64,7 @@
 
 <details>
 <summary>
-<b>Ловкость рук (<a href="sprint_1/juggle.py">juggle.py</a></b>)
+<b>Ловкость рук (<a href="sprint_1/juggle.py">juggle.py</a>)</b>
 </summary>
 
 #### Условие
@@ -114,7 +114,7 @@
 
 <details>
 <summary>
-<b>Разница списков (<a href="sprint_1/find_missing.py">find_missing.py</a></b>)
+<b>Разница списков (<a href="sprint_1/find_missing.py">find_missing.py</a>)</b>
 </summary>
 
 #### Условие
@@ -128,7 +128,7 @@
 
 <details>
 <summary>
-<b>Удаляем нули (<a href="sprint_1/delete_zero.py">delete_zero.py</a></b>)
+<b>Удаляем нули (<a href="sprint_1/delete_zero.py">delete_zero.py</a>)</b>
 </summary>
 
 #### Условие
@@ -148,7 +148,7 @@
 
 <details>
 <summary>
-<b>Мониторинг (<a href="sprint_2/monitoring.py">monitoring.py</a></b>)
+<b>Мониторинг (<a href="sprint_2/monitoring.py">monitoring.py</a>)</b>
 </summary>
 
 #### Условие
@@ -201,7 +201,7 @@
 
 <details>
 <summary>
-<b>Стек - MaxEffective (<a href="sprint_2/stack_max_effective.py">stack_max_effective.py</a></b>)
+<b>Стек - MaxEffective (<a href="sprint_2/stack_max_effective.py">stack_max_effective.py</a>)</b>
 </summary>
 
 #### Условие
@@ -260,7 +260,7 @@ None<br>
 
 <details>
 <summary>
-<b>Скобочная последовательность (<a href="sprint_2/brackets.py">brackets.py</a></b>)
+<b>Скобочная последовательность (<a href="sprint_2/brackets.py">brackets.py</a>)</b>
 </summary>
 
 #### Условие
@@ -314,7 +314,7 @@ True
 
 <details>
 <summary>
-<b>Ограниченная очередь (<a href="sprint_2/queue_sized.py">queue_sized.py</a></b>)
+<b>Ограниченная очередь (<a href="sprint_2/queue_sized.py">queue_sized.py</a>)</b>
 </summary>
 
 #### Условие
@@ -378,7 +378,7 @@ error<br>
 
 <details>
 <summary>
-<b>Списочная очередь (<a href="sprint_2/queue_list.py">queue_list.py</a></b>)
+<b>Списочная очередь (<a href="sprint_2/queue_list.py">queue_list.py</a>)</b>
 </summary>
 
 #### Условие
@@ -436,7 +436,7 @@ error<br>
 
 <details>
 <summary>
-<b>Рекурсивные числа Фибоначчи (<a href="sprint_2/fibonacci.py">fibonacci.py</a></b>)
+<b>Рекурсивные числа Фибоначчи (<a href="sprint_2/fibonacci.py">fibonacci.py</a>)</b>
 </summary>
 
 #### Условие
@@ -493,7 +493,7 @@ error<br>
 
 <details>
 <summary>
-<b>Дек (<a href="sprint_2/deck.py">deck.py</a></b>)
+<b>Дек (<a href="sprint_2/deck.py">deck.py</a>)</b>
 </summary>
 
 #### Условие
@@ -549,7 +549,7 @@ pop_back<br>
 
 <details>
 <summary>
-<b>Калькулятор (<a href="sprint_2/polsk_calc.py">polsk_calc.py</a></b>)
+<b>Калькулятор (<a href="sprint_2/polsk_calc.py">polsk_calc.py</a>)</b>
 </summary>
 
 #### Условие
@@ -636,7 +636,7 @@ pop_back<br>
 
 <details>
 <summary>
-<b>Генератор скобок (<a href="sprint_3/brackets_generator.py">brackets_generator.py</a></b>)
+<b>Генератор скобок (<a href="sprint_3/brackets_generator.py">brackets_generator.py</a>)</b>
 </summary>
 
 #### Условие
@@ -690,7 +690,7 @@ pop_back<br>
 
 <details>
 <summary>
-<b>Генератор скобок (<a href="sprint_3/brackets_generator.py">brackets_generator.py</a></b>)
+<b>Генератор скобок (<a href="sprint_3/brackets_generator.py">brackets_generator.py</a>)</b>
 </summary>
 
 #### Условие
@@ -744,7 +744,7 @@ pop_back<br>
 
 <details>
 <summary>
-<b>Комбинации (<a href="sprint_3/combinations.py">combinations.py</a></b>)
+<b>Комбинации (<a href="sprint_3/combinations.py">combinations.py</a>)</b>
 </summary>
 
 #### Условие
@@ -793,7 +793,7 @@ ad ae af bd be bf cd ce cf<br>
 
 <details>
 <summary>
-<b>Подпоследовательность (<a href="sprint_3/subsequence.py">subsequence.py</a></b>)
+<b>Подпоследовательность (<a href="sprint_3/subsequence.py">subsequence.py</a>)</b>
 </summary>
 
 #### Условие
@@ -839,7 +839,7 @@ True<br>
 
 <details>
 <summary>
-<b>Печеньки (<a href="sprint_3/crackers.py">crackers.py</a></b>)
+<b>Печеньки (<a href="sprint_3/crackers.py">crackers.py</a>)</b>
 </summary>
 
 #### Условие
@@ -894,7 +894,7 @@ True<br>
 
 <details>
 <summary>
-<b>Периметр треугольника (<a href="sprint_3/triangles.py">triangles.py</a></b>)
+<b>Периметр треугольника (<a href="sprint_3/triangles.py">triangles.py</a>)</b>
 </summary>
 
 #### Условие
@@ -948,7 +948,7 @@ True<br>
 
 <details>
 <summary>
-<b>Гардероб (<a href="sprint_3/closet.py">closet.py</a></b>)
+<b>Гардероб (<a href="sprint_3/closet.py">closet.py</a>)</b>
 </summary>
 
 #### Условие
@@ -993,7 +993,7 @@ True<br>
 
 <details>
 <summary>
-<b>Большое число (<a href="sprint_3/big_number.py">big_number.py</a></b>)
+<b>Большое число (<a href="sprint_3/big_number.py">big_number.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1033,7 +1033,7 @@ True<br>
 
 <details>
 <summary>
-<b>Пузырёк (<a href="sprint_3/bubble.py">bubble.py</a></b>)
+<b>Пузырёк (<a href="sprint_3/bubble.py">bubble.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1095,7 +1095,7 @@ True<br>
 
 <details>
 <summary>
-<b>Поиск в сломанном массиве (<a href="sprint_3/broken_search.py">broken_search.py</a></b>)
+<b>Поиск в сломанном массиве (<a href="sprint_3/broken_search.py">broken_search.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1151,7 +1151,7 @@ True<br>
 
 <details>
 <summary>
-<b>Эффективная быстрая сортировка (<a href="sprint_3/efficient_quick_sort.py">efficient_quick_sort.py</a></b>)
+<b>Эффективная быстрая сортировка (<a href="sprint_3/efficient_quick_sort.py">efficient_quick_sort.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1253,7 +1253,7 @@ rita<br>
 
 <details>
 <summary>
-<b>Полиномиальный хеш (<a href="sprint_4/polynomial_hash.py">polynomial_hash.py</a></b>)
+<b>Полиномиальный хеш (<a href="sprint_4/polynomial_hash.py">polynomial_hash.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1298,7 +1298,7 @@ a<br>
 
 <details>
 <summary>
-<b>Сломай меня (<a href="sprint_4/crash_polynomial_hash.py">crash_polynomial_hash.py</a></b>)
+<b>Сломай меня (<a href="sprint_4/crash_polynomial_hash.py">crash_polynomial_hash.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1328,7 +1328,7 @@ a<br>
 
 <details>
 <summary>
-<b>Префиксные хеши (<a href="sprint_4/prefix_hash.py">prefix_hash.py</a></b>)
+<b>Префиксные хеши (<a href="sprint_4/prefix_hash.py">prefix_hash.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1396,7 +1396,7 @@ abcdefgh<br>
 
 <details>
 <summary>
-<b>Кружки (<a href="sprint_4/bocals.py">bocals.py</a></b>)
+<b>Кружки (<a href="sprint_4/bocals.py">bocals.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1454,7 +1454,7 @@ abcdefgh<br>
 
 <details>
 <summary>
-<b>Подстроки (<a href="sprint_4/substrings.py">substrings.py</a></b>)
+<b>Подстроки (<a href="sprint_4/substrings.py">substrings.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1493,7 +1493,7 @@ abcabcbb<br>
 
 <details>
 <summary>
-<b>Поисковая система (<a href="sprint_4/search_system.py">search_system.py</a></b>)
+<b>Поисковая система (<a href="sprint_4/search_system.py">search_system.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1567,7 +1567,7 @@ mary likes black coffee without milk<br>
 
 <details>
 <summary>
-<b>Хеш-таблица (<a href="sprint_4/hash_table.py">hash_table.py</a></b>)
+<b>Хеш-таблица (<a href="sprint_4/hash_table.py">hash_table.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1652,7 +1652,7 @@ None<br>
 
 <details>
 <summary>
-<b>Сбалансированное дерево (<a href="sprint_5/balanced_tree.py">balanced_tree.py</a></b>)
+<b>Сбалансированное дерево (<a href="sprint_5/balanced_tree.py">balanced_tree.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1674,7 +1674,7 @@ None<br>
 
 <details>
 <summary>
-<b>Лампочки (<a href="sprint_5/lamps.py">lamps.py</a></b>)
+<b>Лампочки (<a href="sprint_5/lamps.py">lamps.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1695,7 +1695,7 @@ None<br>
 
 <details>
 <summary>
-<b>Дерево - анаграмма (<a href="sprint_5/anagram.py">anagram.py</a></b>)
+<b>Дерево - анаграмма (<a href="sprint_5/anagram.py">anagram.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1715,7 +1715,7 @@ None<br>
 
 <details>
 <summary>
-<b>Дерево - близнецы (<a href="sprint_5/twins.py">twins.py</a></b>)
+<b>Дерево - близнецы (<a href="sprint_5/twins.py">twins.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1735,7 +1735,7 @@ None<br>
 
 <details>
 <summary>
-<b>Дерево поиска (<a href="sprint_5/bst.py">bst.py</a></b>)
+<b>Дерево поиска (<a href="sprint_5/bst.py">bst.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1756,7 +1756,7 @@ None<br>
 
 <details>
 <summary>
-<b>Максимальная глубина (<a href="sprint_5/max_depth.py">max_depth.py</a></b>)
+<b>Максимальная глубина (<a href="sprint_5/max_depth.py">max_depth.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1779,7 +1779,7 @@ None<br>
 
 <details>
 <summary>
-<b>Разные деревья поиска (<a href="sprint_5/number_bst.py">number_bst.py</a></b>)
+<b>Разные деревья поиска (<a href="sprint_5/number_bst.py">number_bst.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1800,7 +1800,7 @@ None<br>
 
 <details>
 <summary>
-<b>Пирамидальная сортировка (<a href="sprint_5/heap_sort.py">heap_sort.py</a></b>)
+<b>Пирамидальная сортировка (<a href="sprint_5/heap_sort.py">heap_sort.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1900,7 +1900,7 @@ rita<br>
 
 <details>
 <summary>
-<b>Удали узел (<a href="sprint_5/remove_node.py">remove_node.py</a></b>)
+<b>Удали узел (<a href="sprint_5/remove_node.py">remove_node.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1929,7 +1929,7 @@ rita<br>
 
 <details>
 <summary>
-<b>Построить список смежности (<a href="sprint_6/adjacency_list.py">adjacency_list.py</a></b>)
+<b>Построить список смежности (<a href="sprint_6/adjacency_list.py">adjacency_list.py</a>)</b>
 </summary>
 
 #### Условие
@@ -1980,7 +1980,7 @@ rita<br>
 
 <details>
 <summary>
-<b>Перевести список ребер в матрицу смежности (<a href="sprint_6/adjacency_matrix.py">adjacency_matrix.py</a></b>)
+<b>Перевести список ребер в матрицу смежности (<a href="sprint_6/adjacency_matrix.py">adjacency_matrix.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2027,7 +2027,7 @@ rita<br>
 
 <details>
 <summary>
-<b>DFS (<a href="sprint_6/dfs.py">dfs.py</a></b>)
+<b>DFS (<a href="sprint_6/dfs.py">dfs.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2074,7 +2074,7 @@ rita<br>
 
 <details>
 <summary>
-<b>BFS (<a href="sprint_6/bfs.py">bfs.py</a></b>)
+<b>BFS (<a href="sprint_6/bfs.py">bfs.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2121,7 +2121,7 @@ rita<br>
 
 <details>
 <summary>
-<b>Компоненты связности (<a href="sprint_6/connectivity.py">connectivity.py</a></b>)
+<b>Компоненты связности (<a href="sprint_6/connectivity.py">connectivity.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2168,7 +2168,7 @@ rita<br>
 
 <details>
 <summary>
-<b>Компоненты связности (<a href="sprint_6/attractions.py">attractions.py</a></b>)
+<b>Компоненты связности (<a href="sprint_6/attractions.py">attractions.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2227,7 +2227,7 @@ rita<br>
 
 <details>
 <summary>
-<b>Дорогая сеть (<a href="sprint_6/expensive_network.py">expensive_network.py</a></b>)
+<b>Дорогая сеть (<a href="sprint_6/expensive_network.py">expensive_network.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2279,7 +2279,7 @@ w — его вес ( 1 ≤ u, v ≤ n, 0 ≤ w ≤ 10000).
 
 <details>
 <summary>
-<b>Железные дороги (<a href="sprint_6/railroads.py">railroads.py</a></b>)
+<b>Железные дороги (<a href="sprint_6/railroads.py">railroads.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2345,7 +2345,7 @@ NO<br>
 
 <details>
 <summary>
-<b>Биржа (<a href="sprint_7/exchange.go">exchange.go</a></b>)
+<b>Биржа (<a href="sprint_7/exchange.go">exchange.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2391,7 +2391,7 @@ NO<br>
 
 <details>
 <summary>
-<b>Расписание (<a href="sprint_7/schedule.go">schedule.go</a></b>)
+<b>Расписание (<a href="sprint_7/schedule.go">schedule.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2448,7 +2448,7 @@ NO<br>
 
 <details>
 <summary>
-<b>Золотая лихорадка (<a href="sprint_7/fever.go">fever.go</a></b>)
+<b>Золотая лихорадка (<a href="sprint_7/fever.go">fever.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2503,7 +2503,7 @@ NO<br>
 
 <details>
 <summary>
-<b>Числа Фибоначчи для взрослых (<a href="sprint_7/fibonacci.go">fibonacci.go</a></b>)
+<b>Числа Фибоначчи для взрослых (<a href="sprint_7/fibonacci.go">fibonacci.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2539,7 +2539,7 @@ NO<br>
 
 <details>
 <summary>
-<b>Прыжки по лестнице (<a href="sprint_7/jumps.go">jumps.go</a></b>)
+<b>Прыжки по лестнице (<a href="sprint_7/jumps.go">jumps.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2581,7 +2581,7 @@ NO<br>
 
 <details>
 <summary>
-<b>Банкомат (<a href="sprint_7/atm.go">atm.go</a></b>)
+<b>Банкомат (<a href="sprint_7/atm.go">atm.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2625,7 +2625,7 @@ NO<br>
 
 <details>
 <summary>
-<b>Расстояние по Левенштейну (<a href="sprint_7/levenshtein_distance.py">levenshtein_distance.py</a></b>)
+<b>Расстояние по Левенштейну (<a href="sprint_7/levenshtein_distance.py">levenshtein_distance.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2671,7 +2671,7 @@ abaabc<br>
 
 <details>
 <summary>
-<b>Одинаковые суммы (<a href="sprint_7/is_same_amounts.py">is_same_amounts.py</a></b>)
+<b>Одинаковые суммы (<a href="sprint_7/is_same_amounts.py">is_same_amounts.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2721,7 +2721,7 @@ True<br>
 
 <details>
 <summary>
-<b>Разворот строки (<a href="sprint_8/reversal_string.go">reversal_string.go</a></b>)
+<b>Разворот строки (<a href="sprint_8/reversal_string.go">reversal_string.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2764,7 +2764,7 @@ three two one<br>
 
 <details>
 <summary>
-<b>Самый длинный палиндром (<a href="sprint_8/longest_palindrome.go">longest_palindrome.go</a></b>)
+<b>Самый длинный палиндром (<a href="sprint_8/longest_palindrome.go">longest_palindrome.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2806,7 +2806,7 @@ aabbaa<br>
 
 <details>
 <summary>
-<b>Общий префикс (<a href="sprint_8/general_prefix.go">general_prefix.go</a></b>)
+<b>Общий префикс (<a href="sprint_8/general_prefix.go">general_prefix.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2846,7 +2846,7 @@ abcdefg<br>
 
 <details>
 <summary>
-<b>Глобальная замена (<a href="sprint_8/global_replace.go">global_replace.go</a></b>)
+<b>Глобальная замена (<a href="sprint_8/global_replace.go">global_replace.go</a>)</b>
 </summary>
 
 #### Условие
@@ -2892,7 +2892,7 @@ pimpipompi<br>
 
 <details>
 <summary>
-<b>Packed Prefix (<a href="sprint_8/packed_prefix.py">packed_prefix.py</a></b>)
+<b>Packed Prefix (<a href="sprint_8/packed_prefix.py">packed_prefix.py</a>)</b>
 </summary>
 
 #### Условие
@@ -2946,7 +2946,7 @@ aaa<br>
 
 <details>
 <summary>
-<b>Шпаргалка (<a href="sprint_8/сheat_sheet.py">сheat_sheet.py</a></b>)
+<b>Шпаргалка (<a href="sprint_8/сheat_sheet.py">сheat_sheet.py</a>)</b>
 </summary>
 
 #### Условие
